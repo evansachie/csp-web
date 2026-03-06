@@ -38,7 +38,7 @@ export function Footer() {
               to achieve their goal.
             </p>
             <p className="text-xs text-white/40">
-              Reg. No: <span className="text-white/60">—</span>
+              Reg. No: <span className="text-white/60">123456789xfad</span>
             </p>
           </div>
 
