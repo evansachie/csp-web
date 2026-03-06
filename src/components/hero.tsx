@@ -23,7 +23,7 @@ export function Hero() {
 
       <div className="container relative z-10 mx-auto flex items-end justify-between gap-8">
         <div className="flex flex-col gap-6">
-          <h1 className="max-w-3xl text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl">
+          <h1 className="max-w-3xl text-3xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl">
             Driving trade, seamlessly across the globe.
           </h1>
           <div className="flex flex-wrap gap-4">
@@ -45,7 +45,7 @@ export function Hero() {
           </div>
         </div>
 
-        <p className="max-w-xs pb-2 text-base text-white/80 sm:text-lg">
+        <p className="hidden sm:block max-w-xs pb-2 text-base text-white/80 sm:text-lg">
           Import. Export. Consultancy. — a global procurement and supply chain
           partner helping businesses move smarter and faster.
         </p>

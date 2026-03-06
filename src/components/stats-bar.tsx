@@ -8,11 +8,11 @@ export function StatsBar() {
 
   return (
     <section className="w-full bg-background py-20 sm:py-24 lg:py-28">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
+      <div className="container mx-auto px-6 sm:px-8 lg:px-8">
+        <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
           {stats.map((stat, index) => (
             <div key={index} className="flex flex-col">
-              <div className="mb-3 text-5xl font-bold text-foreground sm:text-6xl lg:text-7xl">
+              <div className="mb-3 text-4xl font-bold text-foreground sm:text-5xl lg:text-7xl">
                 {stat.value}
               </div>
               <div className="border-t border-border pt-3 text-sm font-medium text-muted-foreground sm:text-base">
