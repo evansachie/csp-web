@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 const services = [
   {
+    id: "freight",
     category: "Logistics",
     tagline: "Global freight, handled with precision.",
     body: "We manage the full movement of your goods — air, sea, and road — across international borders. Our freight forwarding service covers documentation, customs clearance, tracking, and last-mile delivery, so your shipments arrive on time, every time.",
@@ -14,6 +15,7 @@ const services = [
     imageRight: true,
   },
   {
+    id: "warehousing",
     category: "Storage & Distribution",
     tagline: "Secure storage. Smart distribution.",
     body: "Our warehousing facilities are designed for reliability and efficiency. Whether you need short-term storage or a long-term distribution hub, we provide inventory management, order fulfilment, and real-time stock visibility.",
@@ -23,6 +25,7 @@ const services = [
     imageRight: false,
   },
   {
+    id: "cargo-insurance",
     category: "Risk Management",
     tagline: "Protect every shipment, every route.",
     body: "Cargo loss, damage, and delays are real risks in global trade. Our cargo insurance solutions give you comprehensive cover tailored to your goods and shipping lanes, backed by trusted underwriters and fast claims processing.",
@@ -32,6 +35,7 @@ const services = [
     imageRight: true,
   },
   {
+    id: "supply-chain",
     category: "Supply Chain",
     tagline: "End-to-end visibility, zero blind spots.",
     body: "We design, optimise, and manage supply chains that are resilient, transparent, and cost-effective. From supplier onboarding to last-mile delivery, we give you full control and real-time data across every node.",
@@ -41,6 +45,7 @@ const services = [
     imageRight: false,
   },
   {
+    id: "advisory",
     category: "Advisory",
     tagline: "Strategy built for growth markets.",
     body: "Our business advisory team brings deep expertise in international trade, procurement strategy, and market entry. We help companies navigate new markets, cut costs, and build the commercial partnerships that drive long-term growth.",
@@ -50,6 +55,7 @@ const services = [
     imageRight: true,
   },
   {
+    id: "it",
     category: "Technology",
     tagline: "Digital infrastructure for modern logistics.",
     body: "From ERP integrations to custom logistics software, our IT consultancy arm helps businesses modernise their operations. We deliver scalable tech solutions that connect your supply chain, automate reporting, and improve decision-making.",
@@ -66,6 +72,7 @@ export function ServiceBlocks() {
       {services.map((service, index) => (
         <section
           key={service.category}
+          id={service.id}
           className={`py-20 sm:py-24 lg:py-28 ${index % 2 === 0 ? "bg-background" : "bg-muted/40"}`}
         >
           <div className="container mx-auto px-6 sm:px-8 lg:px-8">
