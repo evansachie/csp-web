@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, ArrowRight, Loader2 } from "lucide-react";
+
+const SHEET_ENDPOINT = process.env.NEXT_PUBLIC_GOOGLE_SHEET_URL ?? "";
 
 const contactDetails = [
   {
@@ -27,10 +29,42 @@ const contactDetails = [
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    setError(null);
+
+    const form = e.currentTarget;
+    const data = {
+      name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      company: (form.elements.namedItem("company") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+      submittedAt: new Date().toISOString(),
+    };
+
+    if (!SHEET_ENDPOINT) {
+      setSubmitted(true);
+      return;
+    }
+
+    setLoading(true);
+    try {
+      await fetch(SHEET_ENDPOINT, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Please try again or email us directly.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -103,6 +137,7 @@ export function ContactForm() {
                     </label>
                     <input
                       type="text"
+                      name="name"
                       required
                       placeholder="Jane Doe"
                       className="rounded-xl border border-border bg-muted/40 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-foreground/20"
@@ -114,6 +149,7 @@ export function ContactForm() {
                     </label>
                     <input
                       type="text"
+                      name="company"
                       placeholder="Acme Corp"
                       className="rounded-xl border border-border bg-muted/40 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-foreground/20"
                     />
@@ -127,6 +163,7 @@ export function ContactForm() {
                     </label>
                     <input
                       type="email"
+                      name="email"
                       required
                       placeholder="jane@company.com"
                       className="rounded-xl border border-border bg-muted/40 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-foreground/20"
@@ -138,6 +175,7 @@ export function ContactForm() {
                     </label>
                     <input
                       type="tel"
+                      name="phone"
                       placeholder="+1 000 000 0000"
                       className="rounded-xl border border-border bg-muted/40 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-foreground/20"
                     />
@@ -149,6 +187,7 @@ export function ContactForm() {
                     Message
                   </label>
                   <textarea
+                    name="message"
                     required
                     rows={5}
                     placeholder="Tell us about your shipment, supply chain challenge, or how we can help…"
@@ -156,15 +195,27 @@ export function ContactForm() {
                   />
                 </div>
 
+                {error && (
+                  <p className="text-sm text-red-500">{error}</p>
+                )}
+
                 <Button
                   type="submit"
+                  disabled={loading}
                   size="lg"
-                  className="group mt-1 rounded-xl bg-foreground font-semibold text-background hover:opacity-85"
+                  className="group mt-1 rounded-xl bg-foreground font-semibold text-background hover:opacity-85 disabled:opacity-60"
                 >
-                  <span className="flex items-center gap-2">
-                    Send Message
-                    <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-                  </span>
+                  {loading ? (
+                    <span className="flex items-center gap-2">
+                      <Loader2 className="size-4 animate-spin" />
+                      Sending…
+                    </span>
+                  ) : (
+                    <span className="flex items-center gap-2">
+                      Send Message
+                      <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                    </span>
+                  )}
                 </Button>
               </form>
             )}

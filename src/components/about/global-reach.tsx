@@ -36,7 +36,6 @@ export function GlobalReach() {
   return (
     <section className="bg-background py-24">
       <div className="container mx-auto px-6 lg:px-8">
-        {/* Header */}
         <div className="mb-14 max-w-2xl">
           <p className="mb-3 flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-primary">
             <span className="inline-block h-px w-8 bg-primary" />
@@ -51,7 +50,6 @@ export function GlobalReach() {
           </p>
         </div>
 
-        {/* Market grid */}
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {markets.map(({ flag, region, focus }) => (
             <div
