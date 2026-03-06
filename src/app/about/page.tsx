@@ -1,6 +1,7 @@
 import { AboutHero } from "@/components/about/about-hero";
 import { AboutCSP } from "@/components/about/about-csp";
 import { VisionMission } from "@/components/about/vision-mission";
+import { GlobalReach } from "@/components/about/global-reach";
 import { MeetTheTeam } from "@/components/about/meet-the-team";
 import { CtaBand } from "@/components/cta-band";
 
@@ -32,6 +33,7 @@ export default function AboutPage() {
       <AboutHero />
       <AboutCSP />
       <VisionMission />
+      <GlobalReach />
       <MeetTheTeam />
       <CtaBand />
     </>
