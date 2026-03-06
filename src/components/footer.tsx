@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Linkedin, Twitter, Instagram, Facebook } from "lucide-react";
 import { Logo } from "@/components/logo";
 
 const services = [
@@ -18,10 +19,10 @@ const company = [
 ];
 
 const socials = [
-  { label: "LinkedIn", href: "#" },
-  { label: "Twitter / X", href: "#" },
-  { label: "Instagram", href: "#" },
-  { label: "Facebook", href: "#" },
+  { label: "LinkedIn", href: "#", icon: Linkedin },
+  { label: "Twitter / X", href: "#", icon: Twitter },
+  { label: "Instagram", href: "#", icon: Instagram },
+  { label: "Facebook", href: "#", icon: Facebook },
 ];
 
 export function Footer() {
@@ -83,15 +84,16 @@ export function Footer() {
               Connect
             </h4>
             <ul className="flex flex-col gap-3">
-              {socials.map((s) => (
-                <li key={s.label}>
+              {socials.map(({ label, href, icon: Icon }) => (
+                <li key={label}>
                   <a
-                    href={s.href}
+                    href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-white/70 transition-colors hover:text-white"
+                    className="flex items-center gap-2.5 text-sm text-white/70 transition-colors hover:text-white"
                   >
-                    {s.label}
+                    <Icon className="size-4 shrink-0" strokeWidth={1.75} />
+                    {label}
                   </a>
                 </li>
               ))}

@@ -13,7 +13,6 @@ export function CtaBand() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-2 lg:gap-20">
           
-          {/* Left: copy */}
           <div className="flex flex-col gap-7">
             <h2 className="text-5xl font-extrabold leading-[1.08] tracking-tight text-gray-950 sm:text-6xl lg:text-7xl">
               Have a shipment to move?
@@ -47,13 +46,9 @@ export function CtaBand() {
             </div>
           </div>
 
-          {/* Right: floating image collage */}
           <div className="relative h-[480px]">
-
-            {/* Blue accent square — top left */}
             <div className="absolute left-[8%] top-[6%] size-16 rounded-2xl bg-[#4F7BF7]" />
 
-            {/* Main large image — center */}
             <div className="absolute left-[18%] top-[8%] h-56 w-64 overflow-hidden rounded-2xl shadow-lg">
               <Image
                 src="/cta-2.jpg"
@@ -64,7 +59,6 @@ export function CtaBand() {
               />
             </div>
 
-            {/* Top right image — warehouse worker */}
             <div className="absolute right-[0%] top-[0%] h-44 w-40 overflow-hidden rounded-2xl shadow-md">
               <Image
                 src="/cta-1.jpg"
@@ -75,7 +69,6 @@ export function CtaBand() {
               />
             </div>
 
-            {/* Bottom left image — port/containers */}
             <div className="absolute bottom-[8%] left-[0%] h-44 w-44 overflow-hidden rounded-2xl shadow-md">
               <Image
                 src="/cta-3.jpg"
@@ -86,10 +79,8 @@ export function CtaBand() {
               />
             </div>
 
-            {/* Light blue accent square — middle */}
             <div className="absolute bottom-[30%] left-[38%] size-10 rounded-xl bg-[#c7d8ff]" />
 
-            {/* Bottom right image — truck/freight */}
             <div className="absolute bottom-[4%] right-[0%] h-48 w-44 overflow-hidden rounded-2xl shadow-md">
               <Image
                 src="/cta-4.jpg"
