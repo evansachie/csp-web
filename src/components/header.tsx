@@ -49,7 +49,9 @@ export function Header({ variant, className }: HeaderProps) {
           ? scrolled
             ? "bg-black/60 text-white backdrop-blur-md shadow-sm"
             : "bg-transparent text-hero-foreground"
-          : "bg-background text-foreground shadow-sm",
+          : scrolled
+            ? "bg-white/80 text-foreground backdrop-blur-md shadow-sm"
+            : "bg-background text-foreground shadow-sm",
         className
       )}
     >
