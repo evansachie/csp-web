@@ -54,7 +54,10 @@ export function Header({ variant, className }: HeaderProps) {
       )}
     >
       <div className="container mx-auto flex h-16 items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
-        <Logo className={isDark ? "text-hero-foreground" : "text-foreground"} />
+        <Logo
+          variant={isDark ? "light" : "dark"}
+          className={isDark ? "text-hero-foreground" : "text-foreground"}
+        />
 
         <nav className="hidden flex-1 items-center justify-center gap-8 md:flex" aria-label="Main">
           {navLinks.map(({ href, label }) => {

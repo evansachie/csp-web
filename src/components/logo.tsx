@@ -4,12 +4,13 @@ import { cn } from "@/lib/utils";
 
 type LogoProps = {
   isFooter?: boolean;
+  variant?: "dark" | "light";
   alt?: string;
   className?: string;
 };
 
-export function Logo({ isFooter, alt = "CSP", className }: LogoProps) {
-  const src = isFooter ? "/logo-white.svg" : "/logo-dark.svg";
+export function Logo({ isFooter, variant, alt = "CSP", className }: LogoProps) {
+  const src = isFooter || variant === "dark" ? "/logo-white.svg" : "/logo-dark.svg";
   return (
     <Link
       href="/"
