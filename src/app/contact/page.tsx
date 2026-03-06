@@ -1,5 +1,6 @@
 import { ContactHero } from "@/components/contact/contact-hero";
 import { ContactForm } from "@/components/contact/contact-form";
+import { ContactMap } from "@/components/contact/contact-map";
 import { CtaBand } from "@/components/cta-band";
 
 export const metadata = {
@@ -13,6 +14,7 @@ export default function ContactPage() {
     <>
       <ContactHero />
       <ContactForm />
+      <ContactMap />
       <CtaBand />
     </>
   );
