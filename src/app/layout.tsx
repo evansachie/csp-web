@@ -56,7 +56,7 @@ export const metadata: Metadata = {
       "Leading Procurement and Supply Chain Management firm. Freight forwarding, warehousing, cargo insurance, and advisory for governments, NGOs, and corporates worldwide.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/icon.png",
         width: 1200,
         height: 630,
         alt: "CSP Global Consultancy – Driving trade, seamlessly across the globe",
@@ -68,13 +68,8 @@ export const metadata: Metadata = {
     title: "CSP – Driving trade, seamlessly across the globe",
     description:
       "Leading Procurement and Supply Chain Management firm. Freight forwarding, warehousing, cargo insurance, and advisory.",
-    images: ["/og-image.jpg"],
+    images: ["/icon.png"],
     creator: "@CSPConsultancy",
-  },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",
   alternates: {
