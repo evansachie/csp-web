@@ -63,12 +63,12 @@ const industries = [
 export function Industries() {
   return (
     <section className="bg-muted/40 py-20 sm:py-24 lg:py-28">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="mb-14 max-w-xl text-4xl font-bold leading-tight text-foreground sm:text-5xl">
+      <div className="container mx-auto px-6 sm:px-8 lg:px-8">
+        <h2 className="mb-10 max-w-xl text-3xl font-bold leading-tight text-foreground sm:text-4xl lg:text-5xl">
           Industries We Serve
         </h2>
 
-        <div className="grid grid-cols-1 gap-x-12 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
           {industries.map((industry) => {
             const Icon = industry.icon;
             return (

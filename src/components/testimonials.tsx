@@ -50,7 +50,7 @@ export function Testimonials() {
 
   return (
     <section className="bg-muted/40 py-20 sm:py-24 lg:py-28">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-6 sm:px-8 lg:px-8">
         <div className="overflow-hidden rounded-2xl bg-background">
           <div className="flex flex-col sm:flex-row">
             <div className="relative h-64 w-full shrink-0 sm:h-auto sm:w-72 lg:w-96">
@@ -64,8 +64,8 @@ export function Testimonials() {
               />
             </div>
 
-            <div className="flex flex-1 flex-col justify-between gap-8 p-8 sm:p-10 lg:p-12">
-              <p className="text-xl leading-snug text-foreground sm:text-2xl lg:text-3xl">
+            <div className="flex flex-1 flex-col justify-between gap-6 p-6 sm:p-10 lg:p-12">
+              <p className="text-base leading-snug text-foreground sm:text-xl lg:text-3xl">
                 &ldquo;{t.quote}&rdquo;
               </p>
 

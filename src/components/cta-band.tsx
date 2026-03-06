@@ -10,11 +10,11 @@ export function CtaBand() {
         background: "linear-gradient(135deg, #f0f2f5 0%, #e8edf5 50%, #f5f7fa 100%)",
       }}
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid items-center gap-16 lg:grid-cols-2 lg:gap-20">
+      <div className="container mx-auto px-6 sm:px-8 lg:px-8">
+        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           
           <div className="flex flex-col gap-7">
-            <h2 className="text-5xl font-extrabold leading-[1.08] tracking-tight text-gray-950 sm:text-6xl lg:text-7xl">
+            <h2 className="text-3xl font-extrabold leading-[1.08] tracking-tight text-gray-950 sm:text-5xl lg:text-7xl">
               Have a shipment to move?
             </h2>
             <p className="max-w-sm text-base leading-relaxed text-gray-500">
@@ -46,7 +46,7 @@ export function CtaBand() {
             </div>
           </div>
 
-          <div className="relative h-[480px]">
+          <div className="relative hidden h-120 lg:block">
             <div className="absolute left-[8%] top-[6%] size-16 rounded-2xl bg-[#4F7BF7]" />
 
             <div className="absolute left-[18%] top-[8%] h-56 w-64 overflow-hidden rounded-2xl shadow-lg">

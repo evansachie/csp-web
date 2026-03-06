@@ -45,9 +45,9 @@ const services = [
 export function ServicesOverview() {
   return (
     <section className="bg-muted/60 py-16 sm:py-20 lg:py-24">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-6 sm:px-8 lg:px-8">
         <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-          <h2 className="max-w-xs text-4xl font-bold leading-tight text-foreground sm:text-5xl">
+          <h2 className="max-w-xs text-3xl font-bold leading-tight text-foreground sm:text-4xl lg:text-5xl">
             Our Services
           </h2>
           <div className="flex flex-col gap-4 sm:items-end sm:text-right">

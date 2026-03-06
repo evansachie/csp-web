@@ -27,10 +27,10 @@ const values = [
 export function WhyChooseUs() {
   return (
     <section className="bg-background py-20 sm:py-24 lg:py-28">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-6 sm:px-8 lg:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col">
-            <h2 className="mb-3 text-4xl font-bold leading-tight text-foreground sm:text-5xl">
+            <h2 className="mb-3 text-3xl font-bold leading-tight text-foreground sm:text-4xl lg:text-5xl">
               Trusted by Businesses
             </h2>
             <p className="mb-10 max-w-md text-sm leading-relaxed text-muted-foreground sm:text-base">
