@@ -9,13 +9,13 @@ export const metadata = {
   description:
     "Learn about CSP — a global procurement and supply chain management firm helping governments, NGOs, and corporates trade smarter.",
   alternates: {
-    canonical: "https://www.cspconsultancy.com/about",
+    canonical: "https://www.cspprocure.com/about",
   },
   openGraph: {
     title: "About Us — CSP Global Consultancy",
     description:
       "Learn about CSP — a global procurement and supply chain management firm helping governments, NGOs, and corporates trade smarter.",
-    url: "https://www.cspconsultancy.com/about",
+    url: "https://www.cspprocure.com/about",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
   },
   twitter: {

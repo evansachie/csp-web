@@ -7,13 +7,13 @@ export const metadata = {
   description:
     "Answers to the most common questions about CSP's freight forwarding, procurement, supply chain, and cargo insurance services.",
   alternates: {
-    canonical: "https://www.cspconsultancy.com/faqs",
+    canonical: "https://www.cspprocure.com/faqs",
   },
   openGraph: {
     title: "FAQs — CSP Global Consultancy",
     description:
       "Answers to the most common questions about CSP's freight forwarding, procurement, supply chain, and cargo insurance services.",
-    url: "https://www.cspconsultancy.com/faqs",
+    url: "https://www.cspprocure.com/faqs",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
   },
 };

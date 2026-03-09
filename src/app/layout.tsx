@@ -9,7 +9,7 @@ const plusJakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
-const BASE_URL = "https://www.cspconsultancy.com";
+const BASE_URL = "https://www.cspprocure.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),

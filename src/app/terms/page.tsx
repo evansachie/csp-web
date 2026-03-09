@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   title: "Terms of Service",
   description:
     "The terms and conditions governing your use of the CSP Global Consultancy website and services.",
-  alternates: { canonical: "https://www.cspconsultancy.com/terms" },
+  alternates: { canonical: "https://www.cspprocure.com/terms" },
 };
 
 const sections = [
   {
     heading: "1. Acceptance of terms",
-    body: `By accessing or using the CSP Global Consultancy website at cspconsultancy.com ("the Site") or engaging our services, you agree to be bound by these Terms of Service ("Terms"). If you do not agree, please do not use the Site or our services.`,
+    body: `By accessing or using the CSP Global Consultancy website at cspprocure.com ("the Site") or engaging our services, you agree to be bound by these Terms of Service ("Terms"). If you do not agree, please do not use the Site or our services.`,
   },
   {
     heading: "2. About CSP",
