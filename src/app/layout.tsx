@@ -93,7 +93,7 @@ const organizationSchema = {
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer service",
-    email: "info@cspconsultancy.com",
+    email: "treasury@cspprocure.com",
   },
   sameAs: [
     "https://www.linkedin.com/company/cspconsultancy",

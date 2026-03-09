@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   Globe,
   GitBranch,
@@ -15,6 +16,7 @@ const services = [
       "Reliable sourcing and delivery of general goods, machinery, food products, electronics, and more — across borders, on time.",
     href: "/services#import-export",
     featured: true,
+    image: "/cta-4.jpg",
   },
   {
     icon: GitBranch,
@@ -23,6 +25,7 @@ const services = [
       "End-to-end procurement and supply chain solutions that improve efficiency, minimise costs, and support business growth.",
     href: "/services#supply-chain",
     featured: false,
+    image: "/service-supply-chain.jpg",
   },
   {
     icon: Briefcase,
@@ -31,6 +34,7 @@ const services = [
       "Strategic guidance for informed decision-making, operational efficiency, risk management, and stronger governance.",
     href: "/services#advisory",
     featured: false,
+    image: "/service-advisory.jpg",
   },
   {
     icon: Monitor,
@@ -39,6 +43,7 @@ const services = [
       "Expert guidance on technology strategy, systems implementation, and digital optimisation tailored to your business.",
     href: "/services#it",
     featured: false,
+    image: "/service-it.jpg",
   },
 ];
 
@@ -71,46 +76,29 @@ export function ServicesOverview() {
               <Link
                 key={service.title}
                 href={service.href}
-                className={`group relative flex min-h-72 flex-col justify-between rounded-2xl p-6 transition-opacity hover:opacity-90 ${
-                  service.featured
-                    ? "bg-foreground text-background"
-                    : "bg-muted text-foreground"
-                }`}
+                className="group relative flex min-h-72 flex-col justify-between overflow-hidden rounded-2xl p-6 transition-opacity hover:opacity-90"
               >
-                <div className="flex items-start justify-between">
-                  <div
-                    className={`flex h-10 w-10 items-center justify-center rounded-full ${
-                      service.featured
-                        ? "bg-background/15"
-                        : "bg-background"
-                    }`}
-                  >
-                    <Icon
-                      className={`h-5 w-5 ${
-                        service.featured ? "text-background" : "text-foreground"
-                      }`}
-                    />
+                <Image
+                  src={service.image}
+                  alt=""
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                />
+                <div className={`absolute inset-0 ${service.featured ? "bg-foreground/80" : "bg-foreground/55"}`} />
+
+                <div className="relative flex items-start justify-between">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/15">
+                    <Icon className="h-5 w-5 text-white" />
                   </div>
-                  <ArrowUpRight
-                    className={`h-5 w-5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 ${
-                      service.featured
-                        ? "text-background/70"
-                        : "text-muted-foreground"
-                    }`}
-                  />
+                  <ArrowUpRight className="h-5 w-5 text-white/70 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </div>
 
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-xl font-bold leading-snug">
+                <div className="relative flex flex-col gap-2">
+                  <h3 className="text-xl font-bold leading-snug text-white">
                     {service.title}
                   </h3>
-                  <p
-                    className={`line-clamp-3 text-sm leading-relaxed ${
-                      service.featured
-                        ? "text-background/70"
-                        : "text-muted-foreground"
-                    }`}
-                  >
+                  <p className="line-clamp-3 text-sm leading-relaxed text-white/70">
                     {service.description}
                   </p>
                 </div>
