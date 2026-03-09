@@ -87,7 +87,8 @@ const organizationSchema = {
     "CSP is a leading Procurement and Supply Chain Management Services firm specialising in procurement services and supply chain management.",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Accra",
+    streetAddress: "White House Stone Street, Humble Grace Lodge",
+    addressLocality: "Ashongman, Accra",
     addressCountry: "GH",
   },
   contactPoint: {
