@@ -7,13 +7,13 @@ export const metadata = {
   description:
     "Freight forwarding, warehousing, cargo insurance, supply chain management, business advisory, and IT consultancy — delivered by CSP worldwide.",
   alternates: {
-    canonical: "https://www.cspconsultancy.com/services",
+    canonical: "https://www.cspprocure.com/services",
   },
   openGraph: {
     title: "Our Services — CSP Global Consultancy",
     description:
       "Freight forwarding, warehousing, cargo insurance, supply chain management, business advisory, and IT consultancy — delivered by CSP worldwide.",
-    url: "https://www.cspconsultancy.com/services",
+    url: "https://www.cspprocure.com/services",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
   },
   twitter: {

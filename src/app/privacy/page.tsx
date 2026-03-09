@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
     "How CSP Global Consultancy collects, uses, and protects your personal information.",
-  alternates: { canonical: "https://www.cspconsultancy.com/privacy" },
+  alternates: { canonical: "https://www.cspprocure.com/privacy" },
 };
 
 const sections = [
   {
     heading: "1. Who we are",
-    body: `CSP Global Consultancy ("CSP", "we", "us", or "our") is a Procurement and Supply Chain Management Services firm registered in Ghana. Our registered office is in Accra, Ghana. This Privacy Policy explains how we handle personal information collected through our website at cspconsultancy.com and through your dealings with us.`,
+    body: `CSP Global Consultancy ("CSP", "we", "us", or "our") is a Procurement and Supply Chain Management Services firm registered in Ghana. Our registered office is in Accra, Ghana. This Privacy Policy explains how we handle personal information collected through our website at cspprocure.com and through your dealings with us.`,
   },
   {
     heading: "2. Information we collect",
