@@ -47,7 +47,7 @@ export function Header({ variant, className }: HeaderProps) {
         isDark
           ? scrolled
             ? "bg-black/60 text-white backdrop-blur-md shadow-sm"
-            : "bg-transparent text-hero-foreground"
+            : "bg-black/35 text-hero-foreground backdrop-blur-sm"
           : scrolled
             ? "bg-white/80 text-foreground backdrop-blur-md shadow-sm"
             : "bg-background text-foreground shadow-sm",
