@@ -10,7 +10,7 @@ type LogoProps = {
 };
 
 export function Logo({ isFooter, variant, alt = "CSP", className }: LogoProps) {
-  const src = isFooter || variant === "dark" ? "/logo-white.svg" : "/logo-dark.svg";
+  const src = isFooter || variant === "dark" ? "/logo.svg" : "/logo.svg";
   return (
     <Link
       href="/"

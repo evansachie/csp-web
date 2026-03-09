@@ -60,7 +60,7 @@ We do not sell, rent, or share your personal information with third parties for 
 • Object to or restrict certain processing.
 • Withdraw consent at any time (where processing is consent-based).
 
-To exercise any of these rights, please contact us at info@cspconsultancy.com.`,
+To exercise any of these rights, please contact us at treasury@cspprocure.com.`,
   },
   {
     heading: "9. Cookies",
@@ -72,7 +72,7 @@ To exercise any of these rights, please contact us at info@cspconsultancy.com.`,
   },
   {
     heading: "11. Contact us",
-    body: `If you have any questions about this Privacy Policy, please contact us at:\n\nCSP Global Consultancy\nAccra, Ghana\nEmail: info@cspconsultancy.com`,
+    body: `If you have any questions about this Privacy Policy, please contact us at:\n\nCSP Global Consultancy\nAccra, Ghana\nEmail: treasury@cspprocure.com`,
   },
 ];
 

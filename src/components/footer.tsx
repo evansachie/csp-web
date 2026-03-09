@@ -18,10 +18,10 @@ const company = [
 ];
 
 const socials = [
-  { label: "LinkedIn", href: "#", icon: Linkedin },
-  { label: "Twitter / X", href: "#", icon: Twitter },
-  { label: "Instagram", href: "#", icon: Instagram },
-  { label: "Facebook", href: "#", icon: Facebook },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/cspconsultancy", icon: Linkedin },
+  { label: "Twitter / X", href: "https://twitter.com/cspconsultancy", icon: Twitter },
+  { label: "Instagram", href: "https://www.instagram.com/cspconsultancy", icon: Instagram },
+  { label: "Facebook", href: "https://www.facebook.com/cspconsultancy", icon: Facebook },
 ];
 
 export function Footer() {
@@ -38,7 +38,7 @@ export function Footer() {
               to achieve their goal.
             </p>
             <p className="text-xs text-white/40">
-              Reg. No: <span className="text-white/60">123456789xfad</span>
+              Reg. No: <span className="text-white/60">CS254291125</span>
             </p>
           </div>
 

@@ -9,15 +9,21 @@ const SHEET_ENDPOINT = process.env.NEXT_PUBLIC_GOOGLE_SHEET_URL ?? "";
 const contactDetails = [
   {
     icon: Mail,
-    label: "Email",
-    value: "info@cspconsultancy.com",
-    href: "mailto:info@cspconsultancy.com",
+    label: "General Enquiries",
+    value: "treasury@cspprocure.com",
+    href: "mailto:treasury@cspprocure.com",
+  },
+  {
+    icon: Mail,
+    label: "Trade & Services",
+    value: "trades@cspprocure.com",
+    href: "mailto:trades@cspprocure.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (000) 000-0000",
-    href: "tel:+10000000000",
+    value: "+233 54 605 1818",
+    href: "tel:+233546051818",
   },
   {
     icon: MapPin,

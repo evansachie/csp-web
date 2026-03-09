@@ -59,7 +59,7 @@ const sections = [
   },
   {
     heading: "12. Contact",
-    body: `If you have any questions about these Terms, please contact us at:\n\nCSP Global Consultancy\nAccra, Ghana\nEmail: info@cspconsultancy.com`,
+    body: `If you have any questions about these Terms, please contact us at:\n\nCSP Global Consultancy\nAccra, Ghana\nEmail: treasury@cspprocure.com`,
   },
 ];
 
