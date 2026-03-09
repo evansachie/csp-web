@@ -28,7 +28,7 @@ const contactDetails = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Global Operations — Africa, Middle East & Asia",
+    value: "White House Stone Street, Humble Grace Lodge, Ashongman, Ghana",
     href: undefined,
   },
 ];

@@ -14,17 +14,27 @@ export function Logo({ isFooter, variant, alt = "CSP", className }: LogoProps) {
   return (
     <Link
       href="/"
-      className={cn("flex items-center gap-2 font-semibold", className)}
+      className={cn("flex items-center gap-2.5 font-semibold", className)}
       aria-label="CSP – Home"
     >
       <Image
         src={src}
         alt={alt}
-        width={120}
-        height={32}
-        className="h-8 w-auto"
+        width={36}
+        height={36}
+        className="h-9 w-9 shrink-0"
         priority
       />
+      <span
+        className={cn(
+          "text-sm font-bold leading-tight",
+          isFooter || variant === "light" ? "text-white" : "text-foreground",
+        )}
+      >
+        CSP Procurement
+        <br />
+        & Trading
+      </span>
     </Link>
   );
 }
