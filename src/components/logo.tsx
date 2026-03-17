@@ -33,7 +33,7 @@ export function Logo({ isFooter, variant, alt = "CSP", className }: LogoProps) {
       >
         CSP Procurement
         <br />
-        & Trading
+        and Trading
       </span>
     </Link>
   );
